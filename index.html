@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNAPHONE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0e0e0e;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0acffe, #495aff);
+            animation: headerGlow 4s infinite alternate;
+        }
+
+        @keyframes headerGlow {
+            0% { filter: brightness(1); }
+            100% { filter: brightness(1.4); }
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 22px;
+            background: #25D366;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        .comment-section {
+            width: 90%;
+            max-width: 600px;
+            margin: 40px auto;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            resize: vertical;
+        }
+
+        .comment-section button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #495aff;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+
+        .comments-list {
+            margin-top: 20px;
+        }
+
+        .comment {
+            background: #262626;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: #111;
+            font-size: 15px;
+            animation: floatText 6s infinite ease-in-out;
+        }
+
+        @keyframes floatText {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+    
+        /* Mejorar centrado y estilo de tienda */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .tienda {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .producto {
+            width: 240px;
+            background: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 15px rgba(0,255,100,0.4);
+        }
+
+        .producto img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        /* Vista previa mejor ubicada */
+        .vista-previa {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .vista-previa img {
+            width: 260px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .vista-previa img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px rgba(0,200,255,0.4);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a TECNAPHONE</h1>
+    <p>Calidad, confianza y servicio técnico confiable</p>
+    <a class="whatsapp-btn" href="https://wa.me/573184775707" target="_blank">Contáctanos por WhatsApp</a>
+</header>
+
+<div class="container">
+
+    <h2 style='margin-left:10px;'>Tienda</h2>
+    <div class="tienda">
+        <div class="producto"><img src="iphone_logo.png"><h3>Bypass sin señal</h3><p><strong>$180.000 COP</strong></p><button class="btn-whatsapp" onclick="window.open('https://wa.me/573184775707?text=Hola%20quiero%20comprar%20Bypass%20sin%20señal')">Comprar por WhatsApp</button></div>
+        <div class="producto"><img src="iphone_logo.png"><h3>Open Menu</h3><p><strong>$270.000 COP</strong></p><button class="btn-whatsapp" onclick="window.open('https://wa.me/573184775707?text=Hola%20quiero%20comprar%20Open%20Menu')">Comprar por WhatsApp</button></div>
+        <div class="producto"><img src="iphone_logo.png"><h3>Desbloqueo de raíz</h3><p><strong>$400.000 COP</strong></p><button class="btn-whatsapp" onclick="window.open('https://wa.me/573184775707?text=Hola%20quiero%20comprar%20Desbloqueo%20de%20raiz')">Comprar por WhatsApp</button></div>
+        <div class="producto"><img src="iphone_logo.png"><h3>Desbloquear en sí</h3><p><strong>Cotizar</strong></p><button class="btn-whatsapp" onclick="window.open('https://wa.me/573184775707?text=Hola%20quiero%20información%20sobre%20Desbloquear%20en%20sí')">Consultar por WhatsApp</button></div>
+    </div>
+
+    <h2 style='margin-left:10px;'>Vista Previa</h2>
+    <div class="vista-previa">
+        <img src="imagenes/Imagen1.jpg">
+        <img src="imagenes/Imagen2.jpg">
+        <img src="imagenes/Imagen3.jpg">
+        <img src="imagenes/Imagen4.jpg">
+    </div>
+
+</div>
+
+
+
+<div class="comment-section">
+    <h2>Déjanos tu comentario</h2>
+    <textarea id="commentInput" rows="4" placeholder="Escribe tu comentario..."></textarea>
+    <button onclick="addComment()">Enviar comentario</button>
+
+    <div class="comments-list" id="commentsList"></div>
+</div>
+
+<footer>
+    "Siempre trabajando y mejorando nuestro servicio porque nos importa que no fracases ni te roben; por eso siempre estaremos aquí... TECNAPHONE"
+</footer>
+
+<script>
+    function addComment() {
+        const input = document.getElementById("commentInput");
+        const text = input.value.trim();
+        if (text === "") return;
+
+        const commentBox = document.createElement("div");
+        commentBox.className = "comment";
+        commentBox.textContent = text;
+
+        document.getElementById("commentsList").appendChild(commentBox);
+        input.value = "";
+    }
+</script>
+
+</body>
+</html>
